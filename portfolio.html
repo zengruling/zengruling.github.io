@@ -13,71 +13,162 @@
 		scrolltitle();
 	</script>
 	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<tt>
-		<div class="whitebox">
-			<h3><a href="index.html">Back to homepage</a></h3>
-			<h1>Here are some more artistic things I have made, sometimes for school.</h1>
-			<h2>School Projects</h2>
-			<div><iframe src="https://drive.google.com/file/d/1bWA4UrEbYQmoU8JaZjeqGZKRv8Rfkat0/view?usp=sharing" width="640" height="480" allow="autoplay"></iframe></div>
-			<h3>Movie: The Life of Oharu, Music: Monkey's Story - Dario Marianelli</h3>
-			<p class="text_type">
-				Done for East Asian Lit class. The class consisted of analyzing classics such as Journey to the West and Dream of the Red Chamber (Chinese), Tale of Genji 
-				(Japanese), The Memoirs of Lady Hyegyeong (Korean), poetry, and modern novels such as <i>The Old Capital</i>, two novels with the same title by Yasunari Kawabata and Chu T'ien-hsin. 
-				<br />This film was analyzed as it is based off of The Life of an Amorous Woman, a novel depicting the struggles of women in Edo Japan.
-			</p>
-			<div>
-				<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQkCvlN3d_yYZqRNysqqLlXFRHsLD_qBmk1hnhFmFRO8GkjM4OHuW0lt01HIVsrdOX0zxdzZNYtTYp7/embed?start=false&loop=true&delayms=15000"
-						frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-			</div>
-			<p class="text_type">Presentation on Neuschwanstein Castle done for intermediate German course.</p>
-			<h2>Oil Paintings</h2>
-			<img src="./images/prairie.jpg" width="300" alt="oil painting of stream going into tunnel yellow flowers blue sky"/>
-			<p class="text_type">Painting based off of a picture I took of the local forest preserve.</p>
-			<img src="./images/pears.jpg" width="300" alt="oil painting of green pears"/>
-			<p class="text_type">My first oil painting done during an extracurricular class.</p>
-			<h2>Drawings</h2>
-			<img src="./images/fox.jpg" width="300" alt="chibi anime style drawing of girl with fox ears and tail jumping color pencils"/><img src="./images/fairy.jpg" width="300" alt="drawing of fairy in white clothes color pencils"/>
-			<h2>Sock Dolls</h2>
-			<div id="slider">
-			<div class="slide"><img src="./images/horse.jpg" width="300" alt="A horse. My first time sewing."/></div>
-			<div class="slide"><img src="./images/pig.jpg" width="300" alt="A pig"/></div>
-			<div class="slide"><img src="./images/bunny.jpg" width="300" alt="Rabbit made for my cousin."/></div>
-			<div class="slide"><img src="./images/lion.jpg" width="300" alt="Lion made for a friend."/></div>
-			<div class="slide"><img src="./images/hippo.jpg" width="300" alt="Hippo made for my brother."/></div>
-			<div class="slide"><img src="./images/cat.jpg" width="300" alt="Maneki Neko made for a childhood friend moving away."/></div>
-			</div>
-			<button type="button" class="text_type" onclick="changeSlides(-1);">❮</button><div id="caption"> </div><button type="button" class="text_type" onclick="changeSlides(1);">❯</button>
-			<p>Patterns from: <a href="https://www.amazon.com/Stray-Sock-Sewing-Making-Creatures/dp/1600611990/ref=sr_1_1?crid=3DMVUPQN3HZG2&keywords=stray+sock+sewing&qid=1690513113&s=books&sprefix=stray+sock+sewing%2Cstripbooks%2C112&sr=1-1"><i>Stray Sock Sewing</i> by Daniel <img src="./images/sock.jpg" width="50" alt="cover of stray sock sewing book by Daniel"/></a></p>
-			<h2>Needle Felting</h2>
-			<img src="./images/giraffe.jpg" width="300" alt="needle-felted cartoon giraffe"/>
+<!-- Fixed navigation buttons -->
+<div class="fixed-nav">
+	<a href="index.html" class="nav-button">← Back to Home</a>
+	<button onclick="scrollToTop()" class="nav-button">↑ Back to Top</button>
+</div>
+
+<div class="whitebox">
+	<h1>Here are some more artistic things I have made, sometimes for school.</h1>
+
+	<h2>School Projects</h2>
+	<div><iframe src="https://drive.google.com/file/d/1bWA4UrEbYQmoU8JaZjeqGZKRv8Rfkat0/preview" width="640" height="480" allow="autoplay"></iframe></div>
+	<h3>Movie: The Life of Oharu, Music: Monkey's Story - Dario Marianelli</h3>
+	<p class="text_type">
+		Done for East Asian Lit class. The class consisted of analyzing classics such as Journey to the West and Dream of the Red Chamber (Chinese), Tale of Genji
+		(Japanese), The Memoirs of Lady Hyegyeong (Korean), poetry, and modern novels such as <i>The Old Capital</i>, two novels with the same title by Yasunari Kawabata and Chu T'ien-hsin.
+		<br />This film was analyzed as it is based off of The Life of an Amorous Woman, a novel depicting the struggles of women in Edo Japan.
+	</p>
+
+	<div>
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQkCvlN3d_yYZqRNysqqLlXFRHsLD_qBmk1hnhFmFRO8GkjM4OHuW0lt01HIVsrdOX0zxdzZNYtTYp7/embed?start=false&loop=true&delayms=15000"
+				frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+	</div>
+	<p class="text_type">Presentation on Neuschwanstein Castle done for intermediate German course.</p>
+
+	<h2>Oil Paintings</h2>
+	<div class="image-gallery">
+		<img src="./images/prairie.jpg" width="300" alt="oil painting of stream going into tunnel yellow flowers blue sky"/>
+		<img src="./images/pears.jpg" width="300" alt="oil painting of green pears"/>
+	</div>
+	<p class="text_type">Left: Painting based off of a picture I took of the local forest preserve. Right: My first oil painting done during an extracurricular class.</p>
+
+	<h2>Drawings</h2>
+	<div class="image-gallery">
+		<img src="./images/fox.jpg" width="300" alt="chibi anime style drawing of girl with fox ears and tail jumping color pencils"/>
+		<img src="./images/fairy.jpg" width="300" alt="drawing of fairy in white clothes color pencils"/>
+	</div>
+
+	<h2>Sock Dolls</h2>
+	<div class="slideshow-container" id="sockdolls-slideshow">
+		<div class="slide">
+			<img src="./images/horse.jpg" alt="A horse. My first time sewing."/>
 		</div>
-	</tt>
-	<script type="text/javascript">
-		let index = 0;
-		const slides = document.querySelectorAll(".slide");
+		<div class="slide">
+			<img src="./images/pig.jpg" alt="A pig"/>
+		</div>
+		<div class="slide">
+			<img src="./images/bunny.jpg" alt="Rabbit made for my cousin."/>
+		</div>
+		<div class="slide">
+			<img src="./images/lion.jpg" alt="Lion made for a friend."/>
+		</div>
+		<div class="slide">
+			<img src="./images/hippo.jpg" alt="Hippo made for my brother."/>
+		</div>
+		<div class="slide">
+			<img src="./images/cat.jpg" alt="Maneki Neko made for a childhood friend moving away."/>
+		</div>
+		<div class="slide-controls">
+			<button class="slide-btn" onclick="changeSlides('sockdolls-slideshow', -1)">❮</button>
+			<span class="slide-caption" id="sockdolls-slideshow-caption"></span>
+			<button class="slide-btn" onclick="changeSlides('sockdolls-slideshow', 1)">❯</button>
+		</div>
+	</div>
+	<p>Patterns from: <a href="https://www.amazon.com/Stray-Sock-Sewing-Making-Creatures/dp/1600611990/"><i>Stray Sock Sewing</i> by Daniel <img src="./images/sock.jpg" width="50" alt="cover of stray sock sewing book by Daniel"/></a></p>
 
-		function showSlide(n) {
-			  slides.forEach((slide, i) => {
-				slide.style.display = i === n ? "block" : "none";
-			  });
-			  showCaption(n);
-		}	
+	<h2>Needle Felting</h2>
+	<div class="image-gallery">
+		<img src="./images/giraffe.jpg" width="300" alt="needle-felted cartoon giraffe"/>
+	</div>
+</div>
 
-		function changeSlides(n) {
-			  index += n;
-			  if (index >= slides.length) index = 0;
-			  if (index < 0) index = slides.length - 1;
-			  showSlide(index);
-			  showCaption(index);
+<script type="text/javascript">
+	// Store slideshow states
+	let slideshowStates = {};
+
+	// Initialize all slideshows
+	function initSlideshows() {
+		const slideshows = document.querySelectorAll('.slideshow-container');
+		slideshows.forEach(slideshow => {
+			const id = slideshow.id;
+			const slides = slideshow.querySelectorAll('.slide');
+			if (slides.length > 0) {
+				slideshowStates[id] = {
+					currentIndex: 0,
+					totalSlides: slides.length
+				};
+				// Hide all slides except first
+				slides.forEach((slide, i) => {
+					slide.style.display = i === 0 ? 'block' : 'none';
+				});
+				// Show caption for first slide
+				updateCaption(id);
+			}
+		});
+	}
+
+	// Change slides for a specific slideshow
+	function changeSlides(slideshowId, n) {
+		if (!slideshowStates[slideshowId]) {
+			const slideshow = document.getElementById(slideshowId);
+			const slides = slideshow.querySelectorAll('.slide');
+			slideshowStates[slideshowId] = {
+				currentIndex: 0,
+				totalSlides: slides.length
+			};
 		}
 
-		function showCaption(n) {
-			document.getElementById("caption").innerHTML = slides[index].childNodes[0].alt;
-		}
+		const state = slideshowStates[slideshowId];
+		const slideshow = document.getElementById(slideshowId);
+		const slides = slideshow.querySelectorAll('.slide');
 
-		showSlide(index);
-	</script>
+		// Hide current slide
+		slides[state.currentIndex].style.display = 'none';
+
+		// Update index
+		state.currentIndex += n;
+		if (state.currentIndex >= state.totalSlides) state.currentIndex = 0;
+		if (state.currentIndex < 0) state.currentIndex = state.totalSlides - 1;
+
+		// Show new slide
+		slides[state.currentIndex].style.display = 'block';
+
+		// Update caption
+		updateCaption(slideshowId);
+	}
+
+	// Update caption for a slideshow
+	function updateCaption(slideshowId) {
+		const state = slideshowStates[slideshowId];
+		const slideshow = document.getElementById(slideshowId);
+		const slides = slideshow.querySelectorAll('.slide');
+		const captionElement = document.getElementById(slideshowId + '-caption');
+
+		if (captionElement && slides[state.currentIndex]) {
+			const img = slides[state.currentIndex].querySelector('img');
+			if (img && img.alt) {
+				captionElement.innerHTML = img.alt;
+			}
+		}
+	}
+
+	// Scroll to top function
+	function scrollToTop() {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	}
+
+	// Initialize when page loads
+	window.onload = function() {
+		initSlideshows();
+	};
+</script>
 </body>
 </html>

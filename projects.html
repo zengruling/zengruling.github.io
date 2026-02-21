@@ -1,66 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type='text/javascript'>
-		title = "Projects ";
-		position = 0;
-		function scrolltitle() {
-			document.title = title.substring(position, title.length) + title.substring(0, position);
-			position++;
-			if (position > title.length) position = 0;
-			titleScroll = window.setTimeout(scrolltitle, 170);
-		}
-		scrolltitle();
-	</script>
-	<link rel="stylesheet" href="style.css">
+    <script type='text/javascript'>
+        title = "Projects ";
+        position = 0;
+        function scrolltitle() {
+            document.title = title.substring(position, title.length) + title.substring(0, position);
+            position++;
+            if (position > title.length) position = 0;
+            titleScroll = window.setTimeout(scrolltitle, 170);
+        }
+        scrolltitle();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Additional style for iframe border removal */
+        iframe {
+            border: none;
+        }
+    </style>
 </head>
 <body>
-	<tt>
-        <div class="whitebox">
-            <h3><a href="index.html">Back to homepage</a></h3>
-            <h1>Here are the projects I have done for school. </h1>
+<!-- Fixed navigation buttons -->
+<div class="fixed-nav">
+    <a href="index.html" class="nav-button">← Back to Home</a>
+    <button onclick="scrollToTop()" class="nav-button">↑ Back to Top</button>
+</div>
 
-            <h2>Spring 2023: ASTR 405 Planetary Systems</h2>
-            <h3>This is from an assignment visualizing particle movement in relation to the Sun and Jupiter.</h3>
-            <img src="./images/planets.gif" style="width:600px;height:600px" />
+<div class="whitebox">
+    <h1>Here are the projects I have done for school.</h1>
 
-            <h2>Fall 2022: ASTR 310 Computing in Astronomy</h2>
-            <h3>
-                <p>The course focused on Python and data analysis techniques used in modern astronomy.
-                <br>This is one of the more visually interesting assignments using altitude to color a map of Olympus Mons, a volcano on Mars.</p>
-                <img src="./images/mars.png" style="width:600px;height:600px" />
-            </h3>
+    <h2>Spring 2023: ASTR 405 Planetary Systems</h2>
+    <h3>This is from an assignment visualizing particle movement in relation to the Sun and Jupiter.</h3>
+    <div class="image-gallery">
+        <img src="./images/planets.gif" style="max-width:100%; height:auto; width:600px;" alt="Animation of particle movement relative to Sun and Jupiter"/>
+    </div>
 
-            <div>
-                <h2>Spring 2022: HORT 223 Intelligent Behavior of Plants</h2>
-                <h3>This is the final research paper I wrote for this course.</h3>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vRYvvEmWALGAw9YFQBLNy5kP7tzUrOJWNDNmj4HwE-Su6QfPkmvH3dI908R4fAzlw/pub?embedded=true"
-                        frameborder="0" width="800" height="900" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-            </div>
+    <h2>Fall 2022: ASTR 310 Computing in Astronomy</h2>
+    <h3>
+        <p>The course focused on Python and data analysis techniques used in modern astronomy.
+            <br>This is one of the more visually interesting assignments using altitude to color a map of Olympus Mons, a volcano on Mars.</p>
+    </h3>
+    <div class="image-gallery">
+        <img src="./images/mars.png" style="max-width:100%; height:auto; width:600px;" alt="Map of Olympus Mons on Mars colored by altitude"/>
+    </div>
 
-            <div>
-                <h2>Fall 2021: ASTR 350 The Big Bang, Black Holes and The End of the Universe Final Project</h2>
-                <h3>
-                    <p>This course focused on conceptual discussion of the topics mentioned in the title.
-                    <br>Our final project was to present a topic building on those brought up in the course. Our group chose to discuss white holes.
-                    <br>I believe this project, as well as the one for CS I did the same semester helped me develop my leadership skills managing and delegating tasks among a group.
-                    <br>The people I ended up grouping up with were similar to me in that we all seemed somewhat uncomfortable with taking too much initiative, so I tried to take the opportunity to push myself to manage a group.
-                    <br>It was fairly anxiety-inducing trying to strike a balance between allowing people to work on their own and checking in on progress, but in the end I am very satisfied with what we were able to accomplish.</p>
-                </h3>
-                <iframe src="https://drive.google.com/file/d/1ipm-SYlfh_qeUBndcKxoEYwKIr9NnOHk/preview" width="800" height="500" allow="autoplay"></iframe>
-            </div>
-
-            <div>
-                <h2>Fall 2021: CS 225 Data Structures Final Project</h2>
-                <h3>
-                    <p>This was a final project where we were required to make a tool using the data structures discussed in the class. My group chose to use a database of music tags to analyze genres.
-                    <br>The project is available to view on my github <a href="https://github.com/zengruling/cs225_final_project/">here.</a></p>
-                </h3>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTNAiqpFcp2uqSKdI3U4IqlchKHylgPfLmf-pxXT6a1fNEOcttZJtYe5mshZWTYRQHoqV783CNOJ_XY/embed?start=false&loop=false&delayms=10000"
-                        frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-            </div>
+    <div>
+        <h2>Spring 2022: HORT 223 Intelligent Behavior of Plants</h2>
+        <h3>This is the final research paper I wrote for this course.</h3>
+        <div style="overflow-x: auto;">
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vRYvvEmWALGAw9YFQBLNy5kP7tzUrOJWNDNmj4HwE-Su6QfPkmvH3dI908R4fAzlw/pub?embedded=true"
+                    width="100%" height="900" style="max-width:800px; border:none;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </div>
-		</div>
-	</tt>
+    </div>
+
+    <div>
+        <h2>Fall 2021: ASTR 350 The Big Bang, Black Holes and The End of the Universe Final Project</h2>
+        <h3>
+            <p>This course focused on conceptual discussion of the topics mentioned in the title.
+                <br>Our final project was to present a topic building on those brought up in the course. Our group chose to discuss white holes.
+                <br>I believe this project, as well as the one for CS I did the same semester helped me develop my leadership skills managing and delegating tasks among a group.
+                <br>The people I ended up grouping up with were similar to me in that we all seemed somewhat uncomfortable with taking too much initiative, so I tried to take the opportunity to push myself to manage a group.
+                <br>It was fairly anxiety-inducing trying to strike a balance between allowing people to work on their own and checking in on progress, but in the end I am very satisfied with what we were able to accomplish.</p>
+        </h3>
+        <div style="overflow-x: auto;">
+            <iframe src="https://drive.google.com/file/d/1ipm-SYlfh_qeUBndcKxoEYwKIr9NnOHk/preview" width="100%" height="500" style="max-width:800px; border:none;" allow="autoplay"></iframe>
+        </div>
+    </div>
+
+    <div>
+        <h2>Fall 2021: CS 225 Data Structures Final Project</h2>
+        <h3>
+            <p>This was a final project where we were required to make a tool using the data structures discussed in the class. My group chose to use a database of music tags to analyze genres.
+                <br>The project is available to view on my github <a href="https://github.com/zengruling/cs225_final_project/">here.</a></p>
+        </h3>
+        <div style="overflow-x: auto;">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTNAiqpFcp2uqSKdI3U4IqlchKHylgPfLmf-pxXT6a1fNEOcttZJtYe5mshZWTYRQHoqV783CNOJ_XY/embed?start=false&loop=false&delayms=10000"
+                    width="100%" height="600" style="max-width:800px; border:none;" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // Scroll to top function
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
 </body>
 </html>
