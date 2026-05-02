@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type='text/javascript'>
-		title = "Portfolio ";
-		position = 0;
-		function scrolltitle() {
-			document.title = title.substring(position, title.length) + title.substring(0, position);
-			position++;
-			if (position > title.length) position = 0;
-			titleScroll = window.setTimeout(scrolltitle, 170);
-		}
-		scrolltitle();
-	</script>
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -26,6 +15,12 @@
 	<h1>Here are some more artistic things I have made, sometimes for school.</h1>
 
 	<h2>School Projects</h2>
+	<div id="yerkes-presentation">
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSJSOAjH4DRgXnDB8N0t-SxEv0H4T-N0HjatPsWCXmLPeknorIFhS70OFjz8PzPA-VbLwmafpIgvIbx/pubembed?start=false&loop=false&delayms=3000"
+				frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+	</div>
+	<p class="text_type">Presentation on Yerkes Observatory I did for a show-and-tell after my Capstone Project.</p>
+
 	<div><iframe src="https://drive.google.com/file/d/1bWA4UrEbYQmoU8JaZjeqGZKRv8Rfkat0/preview" width="640" height="480" allow="autoplay"></iframe></div>
 	<h3>Movie: The Life of Oharu, Music: Monkey's Story - Dario Marianelli</h3>
 	<p class="text_type">
@@ -35,10 +30,12 @@
 	</p>
 
 	<div>
-		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQkCvlN3d_yYZqRNysqqLlXFRHsLD_qBmk1hnhFmFRO8GkjM4OHuW0lt01HIVsrdOX0zxdzZNYtTYp7/embed?start=false&loop=true&delayms=15000"
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQkCvlN3d_yYZqRNysqqLlXFRHsLD_qBmk1hnhFmFRO8GkjM4OHuW0lt01HIVsrdOX0zxdzZNYtTYp7/embed?start=false&loop=true&delayms=10000"
 				frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 	</div>
 	<p class="text_type">Presentation on Neuschwanstein Castle done for intermediate German course.</p>
+
+	<hr>
 
 	<h2>Oil Paintings</h2>
 	<div class="image-gallery">
@@ -47,11 +44,15 @@
 	</div>
 	<p class="text_type">Left: Painting based off of a picture I took of the local forest preserve. Right: My first oil painting done during an extracurricular class.</p>
 
+	<hr>
+
 	<h2>Drawings</h2>
 	<div class="image-gallery">
 		<img src="./images/fox.jpg" width="300" alt="chibi anime style drawing of girl with fox ears and tail jumping color pencils"/>
 		<img src="./images/fairy.jpg" width="300" alt="drawing of fairy in white clothes color pencils"/>
 	</div>
+
+	<hr>
 
 	<h2>Sock Dolls</h2>
 	<div class="slideshow-container" id="sockdolls-slideshow">
@@ -79,7 +80,10 @@
 			<button class="slide-btn" onclick="changeSlides('sockdolls-slideshow', 1)">❯</button>
 		</div>
 	</div>
-	<p>Patterns from: <a href="https://www.amazon.com/Stray-Sock-Sewing-Making-Creatures/dp/1600611990/"><i>Stray Sock Sewing</i> by Daniel <img src="./images/sock.jpg" width="50" alt="cover of stray sock sewing book by Daniel"/></a></p>
+	<p>Patterns from: <a href="https://www.amazon.com/Stray-Sock-Sewing-Making-Creatures/dp/1600611990/"><i>Stray Sock Sewing</i>
+		by Daniel <img src="./images/sock.jpg" width="50" alt="cover of stray sock sewing book by Daniel"/></a></p>
+
+	<hr>
 
 	<h2>Needle Felting</h2>
 	<div class="image-gallery">
@@ -87,88 +91,6 @@
 	</div>
 </div>
 
-<script type="text/javascript">
-	// Store slideshow states
-	let slideshowStates = {};
-
-	// Initialize all slideshows
-	function initSlideshows() {
-		const slideshows = document.querySelectorAll('.slideshow-container');
-		slideshows.forEach(slideshow => {
-			const id = slideshow.id;
-			const slides = slideshow.querySelectorAll('.slide');
-			if (slides.length > 0) {
-				slideshowStates[id] = {
-					currentIndex: 0,
-					totalSlides: slides.length
-				};
-				// Hide all slides except first
-				slides.forEach((slide, i) => {
-					slide.style.display = i === 0 ? 'block' : 'none';
-				});
-				// Show caption for first slide
-				updateCaption(id);
-			}
-		});
-	}
-
-	// Change slides for a specific slideshow
-	function changeSlides(slideshowId, n) {
-		if (!slideshowStates[slideshowId]) {
-			const slideshow = document.getElementById(slideshowId);
-			const slides = slideshow.querySelectorAll('.slide');
-			slideshowStates[slideshowId] = {
-				currentIndex: 0,
-				totalSlides: slides.length
-			};
-		}
-
-		const state = slideshowStates[slideshowId];
-		const slideshow = document.getElementById(slideshowId);
-		const slides = slideshow.querySelectorAll('.slide');
-
-		// Hide current slide
-		slides[state.currentIndex].style.display = 'none';
-
-		// Update index
-		state.currentIndex += n;
-		if (state.currentIndex >= state.totalSlides) state.currentIndex = 0;
-		if (state.currentIndex < 0) state.currentIndex = state.totalSlides - 1;
-
-		// Show new slide
-		slides[state.currentIndex].style.display = 'block';
-
-		// Update caption
-		updateCaption(slideshowId);
-	}
-
-	// Update caption for a slideshow
-	function updateCaption(slideshowId) {
-		const state = slideshowStates[slideshowId];
-		const slideshow = document.getElementById(slideshowId);
-		const slides = slideshow.querySelectorAll('.slide');
-		const captionElement = document.getElementById(slideshowId + '-caption');
-
-		if (captionElement && slides[state.currentIndex]) {
-			const img = slides[state.currentIndex].querySelector('img');
-			if (img && img.alt) {
-				captionElement.innerHTML = img.alt;
-			}
-		}
-	}
-
-	// Scroll to top function
-	function scrollToTop() {
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth'
-		});
-	}
-
-	// Initialize when page loads
-	window.onload = function() {
-		initSlideshows();
-	};
-</script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

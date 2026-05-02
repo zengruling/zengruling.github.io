@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type='text/javascript'>
-		title = "Welcome to my page! ";
-		position = 0;
-		function scrolltitle() {
-			document.title = title.substring(position, title.length) + title.substring(0, position);
-			position++;
-			if (position > title.length) position = 0;
-			titleScroll = window.setTimeout(scrolltitle, 170);
-		}
-		scrolltitle();
-	</script>
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
@@ -48,48 +37,13 @@
 		<p class="text_type">Hi, my name is Carolyn Zeng!</p>
 		<p class="text_type">Some random Javascript I made (click the buttons):</p>
 
-		<script type="text/javascript">
-			function haiku() {
-				generate();
-				var enterButton = document.getElementById("haikuButton");
-				enterButton.addEventListener("click", generate);
-			}
-
-			function generate() {
-				var line1 = ["refreshing and cool", "love is like winter", "a bird flies sweetly", "the softest whisper", "vast as a mountain", "an afternoon breeze", "summer here again", "a winter blanket", "an ocean voyage"]
-				var line2 = ["love is a sweet summer rain", "expels cold air, along with", "softly falling from the tree", "fire falls beneath the trees", "music plays sweetly, drifting", "covers the earth in repose", "as waves break over the bow", "my head is a battleground"]
-				var line3 = ["that washes the world", "one day the spring comes", "we are here as one", "all the world to see", "the fallen brown leaves", "explode into night", "i see the sun set", "and life is renewed", "but only a dream", "the sea welcomes me", "with countless outbursts"]
-
-				var num1 = (Math.floor(Math.random() * 10) % line1.length);
-				var num2 = (Math.floor(Math.random() * 10) % line2.length);
-				var num3 = (Math.floor(Math.random() * 10) % line3.length);
-
-				var words = document.getElementById("words").innerHTML = line1[num1] + "<br>" + line2[num2] + "<br>" + line3[num3] + "<p class='small-attribution'>Haiku lines taken from various places around the internet.</p>";
-			}
-		</script>
 		<button type="button" onclick="haiku()" class="text_type">Generate a haiku!</button>
 		<p id="words" class="text_type"></p>
 
-		<script type="text/javascript">
-			function ship() {
-				create();
-				var enterButton = document.getElementById("shipButton");
-				enterButton.addEventListener("click", create);
-			}
-
-			function create() {
-				var adj = ["Golden", "Red", "Shadowed", "Howling", "Black", "Vile", "Joyful", "Happy", "Royal", "Adventure", "Flying", "Rose", "Edinburgh", "Jolly", "Burning", "Bloody", "Captain's", "Cursed", "Davy Jones'", "Dead", "Hades'", "Hangman's"]
-				var noun = ["Jack", "Gale", "Revenge", "Eel", "Shark", "Whale", "Pearl", "Privateer", "Knave", "Plague", "Hind", "Adventure", "Fortune", "Galley", "Dragon", "Fleece", "Pink", "Hawk", "Trader", "Dutchman", "Jackdaw", "Roger", "Freighter", "Walrus", "Glare", "Sky", "Charlatan", "Horizon", "Vengance", "Desolation", "Fear", "Oath", "Death", "Dagger", "Storm", "Jewel", "Daughter", "Teeth", "Star", "Angel", "Pride", "Trident"]
-
-				var num4 = (Math.floor(Math.random() * 10) % adj.length);
-				var num5 = (Math.floor(Math.random() * 10) % noun.length);
-
-				var name = document.getElementById("name").innerHTML = "The" + " " + adj[num4] + " " + noun[num5];
-			}
-		</script>
 		<button type="button" onclick="ship()" class="text_type">Generate a pirate ship name!</button>
 		<p id="name" class="text_type"></p>
 	</h2>
 </div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

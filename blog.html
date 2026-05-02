@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type='text/javascript'>
-		title = "Blog ";
-		position = 0;
-		function scrolltitle() {
-			document.title = title.substring(position, title.length) + title.substring(0, position);
-			position++;
-			if (position > title.length) position = 0;
-			titleScroll = window.setTimeout(scrolltitle, 170);
-		}
-		scrolltitle();
-	</script>
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -24,6 +13,132 @@
 
 <div class="whitebox">
 	<h1>Here I will talk about what I'm up to.</h1>
+	<!-- Blog Post: 5/1/2026 -->
+	<h2><p>5/1/2026</p></h2>
+	<h3>
+		<p>Rather than going into too much detail, I'll keep it to a summary slideshow.</p>
+		<p>The one thing I'll say is: I've had a great time in grad school and living in New York.
+			It really is like noplace else. Would love to continue here if I'm able, or return someday.</p>
+
+		<!-- 2025 Photos -->
+		<p><strong>2025</strong></p>
+		<div class="slideshow-container" id="summary2025-slideshow">
+			<div class="slide">
+				<img src="./images/Jan2025.jpg" alt="Seeing Hadestown on Broadway! (Jan 2025)"/>
+			</div>
+			<div class="slide">
+				<img src="./images/March2025.jpg" alt="Yerkes Observatory" data-caption="Touring the Yerkes Observatory. I had such a great time I made a whole <a href='portfolio.html#yerkes-presentation'>presentation!</a> (Mar 2025)"/>
+			</div>
+			<div class="slide">
+				<img src="./images/April2025.jpg" alt="Apr 2025"/>
+			</div>
+			<div class="slide">
+				<img src="./images/May2025.jpg" alt="Visited the Vanderbilt Museum (May 2025)"/>
+			</div>
+			<div class="slide">
+				<img src="./images/Aug2025.jpg" alt="Visited the Met..."/>
+			</div>
+			<div class="slide">
+				<img src="./images/Aug20252.jpg" alt="...and Met Cloisters respectively (Aug 2025)"/>
+			</div>
+			<div class="slide-controls">
+				<button class="slide-btn" onclick="changeSlides('summary2025-slideshow', -1)">❮</button>
+				<span class="slide-caption" id="summary2025-slideshow-caption"></span>
+				<button class="slide-btn" onclick="changeSlides('summary2025-slideshow', 1)">❯</button>
+			</div>
+		</div>
+
+		<!-- UK Trip Photos -->
+		<p><strong>UK Trip</strong></p>
+		<div class="slideshow-container" id="summaryUK-slideshow">
+			<div class="slide">
+				<img src="./images/UK1.jpg" alt="British Museum"/>
+			</div>
+			<div class="slide">
+				<img src="./images/UK2.jpg" alt="London Bridge"/>
+			</div>
+			<div class="slide">
+				<img src="./images/UK3.jpg" alt="St. Paul's Cathedral"/>
+			</div>
+			<div class="slide">
+				<img src="./images/UK4.jpg" alt="Saw the Crucible at the new Globe Theatre"/>
+			</div>
+			<div class="slide">
+				<img src="./images/UK5.jpg" alt="Westminster Abbey"/>
+			</div>
+			<div class="slide">
+				<img src="./images/UK6.jpg" alt="Westminster Abbey (cont.)"/>
+			</div>
+			<div class="slide">
+				<img src="./images/UK7.jpg" alt="Saw the Great Gatsby at the London Coliseum"/>
+			</div>
+			<div class="slide">
+				<img src="./images/UK8.jpg" alt="Hampton Court Palace"/>
+			</div>
+			<div class="slide">
+				<img src="./images/UK9.jpg" alt="Stonehenge"/>
+			</div>
+			<div class="slide">
+				<img src="./images/UK10.jpg" alt="Newton's Tree"/>
+			</div>
+			<div class="slide-controls">
+				<button class="slide-btn" onclick="changeSlides('summaryUK-slideshow', -1)">❮</button>
+				<span class="slide-caption" id="summaryUK-slideshow-caption"></span>
+				<button class="slide-btn" onclick="changeSlides('summaryUK-slideshow', 1)">❯</button>
+			</div>
+		</div>
+
+		<!-- Rome Trip Photos -->
+		<p><strong>Rome Trip</strong></p>
+		<div class="slideshow-container" id="summaryRome-slideshow">
+			<div class="slide">
+				<img src="./images/Rome1.jpg" alt="The Trevi Fountain"/>
+			</div>
+			<div class="slide">
+				<img src="./images/Rome2.jpg" alt="The Colosseum"/>
+			</div>
+			<div class="slide">
+				<img src="./images/Rome3.jpg" alt="The Roman Forum"/>
+			</div>
+			<div class="slide">
+				<img src="./images/Rome4.jpg" alt="Monument to Victor Emmanuel II"/>
+			</div>
+			<div class="slide">
+				<img src="./images/Rome5.jpg" alt="The School of Athens in the Vatican"/>
+			</div>
+			<div class="slide">
+				<img src="./images/Rome6.jpg" alt="St. Peter's Basilica"/>
+			</div>
+			<div class="slide">
+				<img src="./images/Rome7.jpg" alt="The Apotheosis of Romulus at Galleria Borghese"/>
+			</div>
+			<div class="slide">
+				<img src="./images/Rome8.jpg" alt="Galleria Doria Pamphilj"/>
+			</div>
+			<div class="slide-controls">
+				<button class="slide-btn" onclick="changeSlides('summaryRome-slideshow', -1)">❮</button>
+				<span class="slide-caption" id="summaryRome-slideshow-caption"></span>
+				<button class="slide-btn" onclick="changeSlides('summaryRome-slideshow', 1)">❯</button>
+			</div>
+		</div>
+
+		<!-- 2026 Photos -->
+		<p><strong>2026</strong></p>
+		<div class="slideshow-container" id="summary2026-slideshow">
+			<div class="slide">
+				<img src="./images/March2026.jpg" alt="Watching Titanique on Broadway! (Mar 2026)"/>
+			</div>
+			<div class="slide">
+				<img src="./images/April2026.jpg" alt="Enjoying the weather just before graduation (Apr 2026)"/>
+			</div>
+			<div class="slide-controls">
+				<button class="slide-btn" onclick="changeSlides('summary2026-slideshow', -1)">❮</button>
+				<span class="slide-caption" id="summary2026-slideshow-caption"></span>
+				<button class="slide-btn" onclick="changeSlides('summary2026-slideshow', 1)">❯</button>
+			</div>
+		</div>
+	</h3>
+	<hr>
 
 	<!-- Blog Post: 1/5/2025 -->
 	<h2><p>1/5/2025</p></h2>
@@ -32,19 +147,48 @@
 		<p>A lot has happened, and I'm sorry for not staying updated!</p>
 		<p>I've gotten into the Master's in Science in Applied Analytics at Columbia's School of Professional Studies. I'm hoping to take advantage of this as a new start.</p>
 		<p>In the meantime, my family traveled to Paris and Barcelona over the winter break. I loved all the museums!</p>
-		<div class="image-gallery" id="paris-gallery">
-			<img src="./images/paris1.jpg" alt="Paris photo 1" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/paris2.jpg" alt="Paris photo 2" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/paris3.jpg" alt="Paris photo 3" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/paris4.jpg" alt="Paris photo 4" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/paris5.jpg" alt="Paris photo 5" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/paris7.jpg" alt="Paris photo 6" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/paris8.jpg" alt="Paris photo 7" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/paris10.jpg" alt="Paris photo 8" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/paris6.jpg" alt="Paris photo 9" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/paris9.jpg" alt="Paris photo 10" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/barcelona1.jpg" alt="Barcelona photo 1" onclick="openSlideshow('paris-gallery')"/>
-			<img src="./images/barcelona2.jpg" alt="Barcelona photo 2" onclick="openSlideshow('paris-gallery')"/>
+		<div class="slideshow-container" id="paris-slideshow">
+			<div class="slide">
+				<img src="./images/paris1.jpg" alt="Paris photo 1"/>
+			</div>
+			<div class="slide">
+				<img src="./images/paris2.jpg" alt="Paris photo 2"/>
+			</div>
+			<div class="slide">
+				<img src="./images/paris3.jpg" alt="Paris photo 3"/>
+			</div>
+			<div class="slide">
+				<img src="./images/paris4.jpg" alt="Paris photo 4"/>
+			</div>
+			<div class="slide">
+				<img src="./images/paris5.jpg" alt="Paris photo 5"/>
+			</div>
+			<div class="slide">
+				<img src="./images/paris7.jpg" alt="Paris photo 6"/>
+			</div>
+			<div class="slide">
+				<img src="./images/paris8.jpg" alt="Paris photo 7"/>
+			</div>
+			<div class="slide">
+				<img src="./images/paris10.jpg" alt="Paris photo 8"/>
+			</div>
+			<div class="slide">
+				<img src="./images/paris6.jpg" alt="Paris photo 9"/>
+			</div>
+			<div class="slide">
+				<img src="./images/paris9.jpg" alt="Paris photo 10"/>
+			</div>
+			<div class="slide">
+				<img src="./images/barcelona1.jpg" alt="Barcelona photo 1"/>
+			</div>
+			<div class="slide">
+				<img src="./images/barcelona2.jpg" alt="Barcelona photo 2"/>
+			</div>
+			<div class="slide-controls">
+				<button class="slide-btn" onclick="changeSlides('paris-slideshow', -1)">❮</button>
+				<span class="slide-caption" id="paris-slideshow-caption"></span>
+				<button class="slide-btn" onclick="changeSlides('paris-slideshow', 1)">❯</button>
+			</div>
 		</div>
 	</h3>
 	<hr>
@@ -449,95 +593,6 @@
 	</h3>
 </div>
 
-<script type="text/javascript">
-	// Store slideshow states
-	let slideshowStates = {};
-
-	// Initialize all slideshows
-	function initSlideshows() {
-		const slideshows = document.querySelectorAll('.slideshow-container');
-		slideshows.forEach(slideshow => {
-			const id = slideshow.id;
-			const slides = slideshow.querySelectorAll('.slide');
-			if (slides.length > 0) {
-				slideshowStates[id] = {
-					currentIndex: 0,
-					totalSlides: slides.length
-				};
-				// Hide all slides except first
-				slides.forEach((slide, i) => {
-					slide.style.display = i === 0 ? 'block' : 'none';
-				});
-				// Show caption for first slide
-				updateCaption(id);
-			}
-		});
-	}
-
-	// Change slides for a specific slideshow
-	function changeSlides(slideshowId, n) {
-		if (!slideshowStates[slideshowId]) {
-			const slideshow = document.getElementById(slideshowId);
-			const slides = slideshow.querySelectorAll('.slide');
-			slideshowStates[slideshowId] = {
-				currentIndex: 0,
-				totalSlides: slides.length
-			};
-		}
-
-		const state = slideshowStates[slideshowId];
-		const slideshow = document.getElementById(slideshowId);
-		const slides = slideshow.querySelectorAll('.slide');
-
-		// Hide current slide
-		slides[state.currentIndex].style.display = 'none';
-
-		// Update index
-		state.currentIndex += n;
-		if (state.currentIndex >= state.totalSlides) state.currentIndex = 0;
-		if (state.currentIndex < 0) state.currentIndex = state.totalSlides - 1;
-
-		// Show new slide
-		slides[state.currentIndex].style.display = 'block';
-
-		// Update caption
-		updateCaption(slideshowId);
-	}
-
-	// Update caption for a slideshow
-	function updateCaption(slideshowId) {
-		const state = slideshowStates[slideshowId];
-		const slideshow = document.getElementById(slideshowId);
-		const slides = slideshow.querySelectorAll('.slide');
-		const captionElement = document.getElementById(slideshowId + '-caption');
-
-		if (captionElement && slides[state.currentIndex]) {
-			const img = slides[state.currentIndex].querySelector('img');
-			if (img && img.alt) {
-				captionElement.innerHTML = img.alt;
-			}
-		}
-	}
-
-	// Open slideshow for image galleries
-	function openSlideshow(galleryId) {
-		// This function can be expanded to create a modal slideshow
-		// For now, it's a placeholder for future functionality
-		console.log('Opening slideshow for gallery:', galleryId);
-	}
-
-	// Scroll to top function
-	function scrollToTop() {
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth'
-		});
-	}
-
-	// Initialize when page loads
-	window.onload = function() {
-		initSlideshows();
-	};
-</script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script type='text/javascript'>
-        title = "Projects ";
-        position = 0;
-        function scrolltitle() {
-            document.title = title.substring(position, title.length) + title.substring(0, position);
-            position++;
-            if (position > title.length) position = 0;
-            titleScroll = window.setTimeout(scrolltitle, 170);
-        }
-        scrolltitle();
-    </script>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -31,6 +20,148 @@
 <div class="whitebox">
     <h1>Here are the projects I have done for school.</h1>
 
+    <h2>Graduate School</h2>
+    <!-- Project 1: SQL - FIFA World Cup App -->
+    <h2>APAN 5310: SQL & Data Management — FIFA World Cup Boston Fan Experience App</h2>
+    <div class="slideshow-container" id="sql-slideshow">
+        <div class="slide"><img src="./images/SQL/SQL_page-0001.jpg" alt="Title slide - FIFA World Cup Boston Fan Experience App"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0002.jpg" alt="Meet the team"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0003.jpg" alt="How it's built - tech stack"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0004.jpg" alt="The problem and solution"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0005.jpg" alt="Database schema"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0006.jpg" alt="Features overview - matches, ticketing, transport, dining, lodging"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0007.jpg" alt="Application tabs - Home, Matches, Dining, Lodging, Transport, Stadium, Players, About"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0008.jpg" alt="Home tab with live countdown timer"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0009.jpg" alt="Ticketing tab - FIFA World Cup 2026 categories"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0010.jpg" alt="Matches tab with match cards and calendar links"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0011.jpg" alt="Transport and lodging maps"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0012.jpg" alt="Dining filter and Leaflet map"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0013.jpg" alt="Players and teams - stats and top scorer spotlight"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0014.jpg" alt="Fan experience tab - events and local attractions"/></div>
+        <div class="slide"><img src="./images/SQL/SQL_page-0015.jpg" alt="Thank you slide"/></div>
+        <div class="slide-controls">
+            <button class="slide-btn" onclick="changeSlides('sql-slideshow', -1)">❮</button>
+            <span class="slide-caption" id="sql-slideshow-caption"></span>
+            <button class="slide-btn" onclick="changeSlides('sql-slideshow', 1)">❯</button>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Project 2: Cloud Computing - NYCTaxiIntel -->
+    <h2>APAN 5450: Cloud Computing — NYCTaxiIntel: Solving The Deadhead Problem</h2>
+    <div class="slideshow-container" id="cloud-slideshow">
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0001.jpg" alt="Title slide - NYCTaxiIntel"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0002.jpg" alt="Agenda"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0003.jpg" alt="Business Background - The deadhead problem"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0004.jpg" alt="Data Sourcing and Cleaning - NYC TLC Trip Record Data"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0005.jpg" alt="Data features"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0006.jpg" alt="AWS Cloud Architecture diagram"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0007.jpg" alt="Network Configuration - VPC, subnets, NAT Gateway"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0008.jpg" alt="Network design continued"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0009.jpg" alt="Security Configuration - IAM, MFA, encryption, KMS"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0010.jpg" alt="Security Groups configuration"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0011.jpg" alt="Model Training - Random Forest Regressor, R-squared 0.76"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0012.jpg" alt="Risk-Adjusted Pricing Framework - Demand-based surcharges"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0013.jpg" alt="Data journey diagram"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0014.jpg" alt="Economics of Cloud Computing"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0015.jpg" alt="Project milestones timeline"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0016.jpg" alt="Team member responsibilities"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0017.jpg" alt="Appendix"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0018.jpg" alt="AWS architecture detailed"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0019.jpg" alt="Additional details"/></div>
+        <div class="slide"><img src="./images/CloudComputing/CloudComputing_page-0020.jpg" alt="Closing slide"/></div>
+        <div class="slide-controls">
+            <button class="slide-btn" onclick="changeSlides('cloud-slideshow', -1)">❮</button>
+            <span class="slide-caption" id="cloud-slideshow-caption"></span>
+            <button class="slide-btn" onclick="changeSlides('cloud-slideshow', 1)">❯</button>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Project 3: AI User Interfaces - ShellLife -->
+    <h2>APAN 5490: AI User Interfaces — ShellLife: A Full-Stack Book Tracking Web Application</h2>
+    <div class="slideshow-container" id="ai-slideshow">
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0001.jpg" alt="Title slide - ShellLife The Digital Archivist"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0002.jpg" alt="Opening slide"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0003.jpg" alt="Key Features"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0004.jpg" alt="User Personas"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0005.jpg" alt="UX/UI Design Evolution - Figma prototype"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0006.jpg" alt="Final Built UI"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0007.jpg" alt="Technical Architecture"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0008.jpg" alt="Integration and Data Handling"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0009.jpg" alt="Recent Enhancements"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0010.jpg" alt="Usability Testing"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0011.jpg" alt="Conclusion and Next Steps"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0012.jpg" alt="Live demo stats"/></div>
+        <div class="slide"><img src="./images/AIUserInterfaces/AIUserInterfaces_page-0013.jpg" alt="Closing"/></div>
+        <div class="slide-controls">
+            <button class="slide-btn" onclick="changeSlides('ai-slideshow', -1)">❮</button>
+            <span class="slide-caption" id="ai-slideshow-caption"></span>
+            <button class="slide-btn" onclick="changeSlides('ai-slideshow', 1)">❯</button>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Project 4: Data Engineering - Retail Operating Hours -->
+    <h2>APAN 5400: Fundamentals of Data Engineering — Identifying Optimal Operating Hours for Retail Locations</h2>
+    <div class="slideshow-container" id="dataeng-slideshow">
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0001.jpg" alt="Title slide"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0002.jpg" alt="Agenda - Project Background, Data Sources, Design Choices, Dashboard, Costs, Governance, Conclusion, Team"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0003.jpg" alt="Project Background - Problem statement"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0004.jpg" alt="Business and Analytics Case Definition"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0005.jpg" alt="Data Source Specification - MTA ridership, entrances, NYPD complaints"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0006.jpg" alt="Design Choices - Python, Pandas, GeoPandas for ETL"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0007.jpg" alt="Design Choices - PostgreSQL + PostGIS for spatial database"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0008.jpg" alt="Design Choices - MongoDB for raw landing zone"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0009.jpg" alt="Design Choices - Z-Score Standardization + Opportunity Index"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0010.jpg" alt="Design Choices - Opportunity Score business rationale"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0011.jpg" alt="Design Choices - Matplotlib + Flask API for visualization and service"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0012.jpg" alt="Design Choices - Flask API business rationale"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0013.jpg" alt="Design Choices - Streamlit + Altair + PyDeck for front-end dashboard"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0014.jpg" alt="Interactive Dashboard - Purpose and overview"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0015.jpg" alt="Dashboard demo - Station selection and opportunity score display"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0016.jpg" alt="Dashboard demo - 24-hour opportunity score chart with interpretation guide"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0017.jpg" alt="Dashboard demo - Visualization continued"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0018.jpg" alt="Dashboard demo - City-wide map with station metrics"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0019.jpg" alt="Dashboard demo - Map continued"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0020.jpg" alt="Dashboard demo - Additional views"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0021.jpg" alt="Projected Costs - AWS cloud deployment estimate"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0022.jpg" alt="Data Governance - Transparency, ethics, retention, security"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0023.jpg" alt="Conclusion and Future Recommendations"/></div>
+        <div class="slide"><img src="./images/DataEngineering/Group%206_5400_Team%20Project_Final%20Delivery_page-0024.jpg" alt="Team Member Contributions"/></div>
+        <div class="slide-controls">
+            <button class="slide-btn" onclick="changeSlides('dataeng-slideshow', -1)">❮</button>
+            <span class="slide-caption" id="dataeng-slideshow-caption"></span>
+            <button class="slide-btn" onclick="changeSlides('dataeng-slideshow', 1)">❯</button>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Project 1: Machine Learning Frameworks - ESG-Sentiment Mismatch -->
+    <h2>APAN 5205: Applied Machine Learning II</h2>
+    <div class="slideshow-container" id="ml-slideshow">
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page1.jpg" alt="Title slide - ESG-Sentiment Mismatch"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page2.jpg" alt="Agenda - Introduction, Research Questions, Data Description, Analytic Techniques"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page3.jpg" alt="Introduction - Problem, Research Goal, Dataset overview"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page4.jpg" alt="Research Questions - Linear regression, event study, trading strategy backtest"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page5.jpg" alt="Data Description and Preparation - Financial data, GDELT news, proprietary sentiment scoring"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page6.jpg" alt="Analytic Techniques RQ1 - Linear Regression"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page7.jpg" alt="Analytic Techniques RQ2 - Event Study Methodology"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page8.jpg" alt="Analytic Techniques RQ3 - Portfolio Backtesting"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page9.jpg" alt="Results RQ1 - No significant relationship between ESG scores and media sentiment, p-value 0.5314, R-squared 0.27%"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page10.jpg" alt="Results RQ2 - High ESG firms suffered sharper stock price drops after negative news"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page11.jpg" alt="Results RQ3 - Mismatch strategy generated ~35% cumulative returns vs 25% for S&P 500"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page12.jpg" alt="Conclusions and Recommendations - ESG-Perception Gap creates market inefficiency"/></div>
+        <div class="slide"><img src="./images/MachineLearningFrameworks/page13.jpg" alt="Thank you slide"/></div>
+        <div class="slide-controls">
+            <button class="slide-btn" onclick="changeSlides('ml-slideshow', -1)">❮</button>
+            <span class="slide-caption" id="ml-slideshow-caption"></span>
+            <button class="slide-btn" onclick="changeSlides('ml-slideshow', 1)">❯</button>
+        </div>
+    </div>
+    <hr>
+
+    <h2>Undergrad</h2>
     <h2>Spring 2023: ASTR 405 Planetary Systems</h2>
     <h3>This is from an assignment visualizing particle movement in relation to the Sun and Jupiter.</h3>
     <div class="image-gallery">
@@ -82,14 +213,6 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    // Scroll to top function
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-</script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
